@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Instagram, Mail, MessageCircle, Music } from 'lucide-react';
+import { Menu, X, Instagram, Mail, MessageCircle, Music, BookOpen } from 'lucide-react';
 import { NAV_ITEMS, SITE_NAME } from '../constants';
 
 interface LayoutProps {
@@ -119,6 +119,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <span>@hyelin.lee.cello</span>
                 </a>
                 <a 
+                  href="https://m.blog.naver.com/gray612" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 hover:text-white transition-colors"
+                >
+                  <BookOpen size={16} />
+                  <span>Naver Blog</span>
+                </a>
+                <a 
                   href="https://www.tiktok.com/@user5810752280047" 
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -143,7 +152,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
           </div>
           <div className="mt-10 pt-6 border-t border-primary-800 text-center text-xs text-stone-500">
-            &copy; {new Date().getFullYear()} Hyerin Lee. All rights reserved.
+            &copy; {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
           </div>
         </div>
       </footer>

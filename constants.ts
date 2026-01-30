@@ -1,6 +1,6 @@
 import { TimelineItem, LectureProgram, YoutubeVideo, NavItem } from './types';
 
-export const SITE_NAME = "Hyerin Lee";
+export const SITE_NAME = "Hyelin Lee";
 export const ROLE_TITLE = "Cellist & Educator";
 
 export const NAV_ITEMS: NavItem[] = [

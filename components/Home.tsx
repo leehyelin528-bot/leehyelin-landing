@@ -21,7 +21,7 @@ const Home: React.FC = () => {
         <div className="w-full md:w-1/2 h-[50vh] md:h-full relative overflow-hidden bg-stone-200">
           <img 
             src="https://lh3.google.com/u/0/d/1OndsMUjgHmS4pIHhmObSd9f2LawkMr2H=w1920-h878-iv1?auditContext=prefetch" 
-            alt="Hyerin Lee Hero" 
+            alt={`${SITE_NAME} Hero`} 
             className="w-full h-full object-cover object-center"
           />
         </div>
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
           <div className="w-full md:w-5/12 aspect-[3/4] rounded-lg overflow-hidden shadow-xl">
              <img 
                src="https://lh3.google.com/u/0/d/1l4zMQCOPel_H0bd1Fvf4ueBFPkQsNlZ7=w1920-h878-iv2?auditContext=prefetch" 
-               alt="Hyerin Lee Profile" 
+               alt={`${SITE_NAME} Profile`} 
                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
              />
           </div>
