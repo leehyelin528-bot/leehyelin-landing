@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Instagram, Mail } from 'lucide-react';
+import { Menu, X, Instagram, Mail, MessageCircle, Music } from 'lucide-react';
 import { NAV_ITEMS, SITE_NAME } from '../constants';
 
 interface LayoutProps {
@@ -101,15 +101,32 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             <div>
               <h3 className="text-white font-serif text-lg mb-4">Contact</h3>
-              <div className="flex flex-col space-y-2 items-center md:items-start text-sm">
-                <div className="flex items-center space-x-2">
+              <div className="flex flex-col space-y-3 items-center md:items-start text-sm">
+                <a 
+                  href="mailto:cello105@hanmail.net" 
+                  className="flex items-center space-x-2 hover:text-white transition-colors"
+                >
                   <Mail size={16} />
-                  <span>contact@hyerinlee.com</span>
-                </div>
-                <div className="flex items-center space-x-2">
+                  <span>cello105@hanmail.net</span>
+                </a>
+                <a 
+                  href="https://www.instagram.com/hyelin.lee.cello" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 hover:text-white transition-colors"
+                >
                   <Instagram size={16} />
-                  <span>@hyerin_cello</span>
-                </div>
+                  <span>@hyelin.lee.cello</span>
+                </a>
+                <a 
+                  href="https://www.tiktok.com/@user5810752280047" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 hover:text-white transition-colors"
+                >
+                  <Music size={16} />
+                  <span>TikTok</span>
+                </a>
               </div>
             </div>
             <div>
@@ -130,6 +147,21 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </div>
       </footer>
+
+      {/* Floating KakaoTalk Button */}
+      <a
+        href="https://open.kakao.com/o/sFzCX66"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#FEE500] text-[#371D1E] rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+        aria-label="카카오톡 문의하기"
+      >
+        {/* Tooltip on hover */}
+        <span className="absolute right-full mr-3 px-2 py-1 bg-stone-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-md">
+          카카오톡 문의
+        </span>
+        <MessageCircle size={28} fill="currentColor" />
+      </a>
     </div>
   );
 };
