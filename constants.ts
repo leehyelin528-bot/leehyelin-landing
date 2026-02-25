@@ -1,4 +1,4 @@
-import { TimelineItem, LectureProgram, YoutubeVideo, NavItem } from './types';
+import { TimelineItem, LectureProgram, YoutubeVideo, NavItem, MaterialItem } from './types';
 
 export const SITE_NAME = "Hyelin Lee";
 export const ROLE_TITLE = "Cellist & Educator";
@@ -91,6 +91,33 @@ export const BOOK_INFO = {
 };
 
 export const INSTRUCTOR_MATERIALS_LINK = "https://drive.google.com/file/d/1b8YUmjKlhLSgl5z9PUGjFN98i9euVe2e/view?usp=sharing";
+
+export const MATERIAL_ITEMS: MaterialItem[] = [
+  {
+    title: "찾아가는 수업지원단 기획안",
+    description: "첼리스트 이혜린의 상세 프로필 및 주요 강의 프로그램 소개 자료입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f81sKHfMJYAQ81LEg2vWFYuI4jOHKeXlRDC3dp",
+    fileType: "pdf"
+  },
+  {
+    title: "다문화 이해연수 기획안",
+    description: "다문화 이해를 위한 연수 프로그램 기획안 자료입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8nxoNxpCoNeVKX709MpEZyAgr4wODGSCuJHc5",
+    fileType: "pdf"
+  },
+  {
+    title: "인문예술 기반-내 안에 노란튤립",
+    description: "인문예술 기반의 '내 안에 노란튤립' 프로그램 관련 자료입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8G3UBJvicopVd4lTa9i1nML8zgb5BQ7mYDwHC",
+    fileType: "pdf"
+  },
+  {
+    title: "첼로프로필 실내",
+    description: "첼리스트 이혜린의 실내 프로필 이미지 자료입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8f79vMlW75zINAhd8n4YwjGrUKTqMpaRtHLXO",
+    fileType: "image"
+  }
+];
 
 export const YOUTUBE_VIDEOS: YoutubeVideo[] = [
   { 

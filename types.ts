@@ -21,3 +21,10 @@ export interface NavItem {
   label: string;
   path: string;
 }
+
+export interface MaterialItem {
+  title: string;
+  description?: string;
+  fileUrl: string;
+  fileType: 'pdf' | 'doc' | 'image' | 'link';
+}

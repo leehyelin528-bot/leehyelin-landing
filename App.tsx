@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Book from './components/Book';
 import Youtube from './components/Youtube';
+import Materials from './components/Materials';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/book" element={<Book />} />
           <Route path="/youtube" element={<Youtube />} />
+          <Route path="/materials" element={<Materials />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>

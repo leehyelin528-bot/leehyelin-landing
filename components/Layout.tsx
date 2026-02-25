@@ -44,15 +44,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </NavLink>
               ))}
               
-              <a
-                href={INSTRUCTOR_MATERIALS_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-full hover:bg-primary-700 transition-colors shadow-sm"
+              <NavLink
+                to="/materials"
+                className={({ isActive }) =>
+                  `flex items-center space-x-1 px-4 py-2 text-sm font-medium rounded-full transition-colors shadow-sm ${
+                    isActive
+                      ? 'bg-primary-700 text-white'
+                      : 'bg-primary-600 text-white hover:bg-primary-700'
+                  }`
+                }
               >
                 <Download size={16} />
                 <span>강사 자료</span>
-              </a>
+              </NavLink>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -89,16 +93,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </NavLink>
               ))}
               
-              <a
-                href={INSTRUCTOR_MATERIALS_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
+              <NavLink
+                to="/materials"
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center justify-center space-x-2 px-3 py-3 mt-4 bg-primary-600 text-white rounded-md text-base font-medium hover:bg-primary-700 transition-colors"
+                className={({ isActive }) =>
+                  `flex items-center justify-center space-x-2 px-3 py-3 mt-4 rounded-md text-base font-medium transition-colors ${
+                    isActive
+                      ? 'bg-primary-700 text-white'
+                      : 'bg-primary-600 text-white hover:bg-primary-700'
+                  }`
+                }
               >
                 <Download size={18} />
                 <span>강사 자료 다운로드</span>
-              </a>
+              </NavLink>
             </div>
           </div>
         )}
@@ -169,6 +177,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     </NavLink>
                   </li>
                 ))}
+                <li>
+                  <NavLink to="/materials" className="hover:text-white transition-colors">
+                    강사 자료실
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>
