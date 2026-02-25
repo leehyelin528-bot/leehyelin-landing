@@ -20,9 +20,10 @@ const Book: React.FC = () => {
           <div className="w-full lg:w-1/3 flex justify-center">
             <div className="relative w-64 md:w-80 shadow-2xl rounded-r-lg transform rotate-1 hover:rotate-0 transition-transform duration-500">
                <img 
-                 src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175980303.jpg" 
+                 src="https://lh3.googleusercontent.com/d/1ZiS8QG9lNGc55Knzsiy4bX18bndeCYtR" 
                  alt="모두가 빨간 튤립일 필요는 없다 표지" 
                  className="w-full h-auto rounded-r-lg" 
+                 referrerPolicy="no-referrer"
                />
             </div>
           </div>

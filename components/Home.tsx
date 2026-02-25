@@ -20,9 +20,10 @@ const Home: React.FC = () => {
         {/* Left Side: Image */}
         <div className="w-full md:w-1/2 h-[50vh] md:h-full relative overflow-hidden bg-stone-200">
           <img 
-            src="https://lh3.google.com/u/0/d/1OndsMUjgHmS4pIHhmObSd9f2LawkMr2H=w1920-h878-iv1?auditContext=prefetch" 
+            src="https://lh3.googleusercontent.com/d/1aIWumij3voUORk73noFdB0WHt5r9pDY7" 
             alt={`${SITE_NAME} Hero`} 
             className="w-full h-full object-cover object-center"
+            referrerPolicy="no-referrer"
           />
         </div>
         
@@ -49,9 +50,10 @@ const Home: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-full md:w-5/12 aspect-[3/4] rounded-lg overflow-hidden shadow-xl">
              <img 
-               src="https://lh3.google.com/u/0/d/1l4zMQCOPel_H0bd1Fvf4ueBFPkQsNlZ7=w1920-h878-iv2?auditContext=prefetch" 
+               src="https://lh3.googleusercontent.com/d/1JtGezsOjMIxMlOEnxjaQKNc8o5uNiMDH" 
                alt={`${SITE_NAME} Profile`} 
-               className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+               className="w-full h-full object-cover object-left-top hover:scale-105 transition-transform duration-700"
+               referrerPolicy="no-referrer"
              />
           </div>
           <div className="w-full md:w-7/12">
