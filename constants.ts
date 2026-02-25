@@ -116,6 +116,36 @@ export const MATERIAL_ITEMS: MaterialItem[] = [
     description: "첼리스트 이혜린의 실내 프로필 이미지 자료입니다.",
     fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8f79vMlW75zINAhd8n4YwjGrUKTqMpaRtHLXO",
     fileType: "image"
+  },
+  {
+    title: "첼로프로필 야외 풀샷",
+    description: "첼리스트 이혜린의 야외 프로필(풀샷) 이미지 자료입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8GuUoNJicopVd4lTa9i1nML8zgb5BQ7mYDwHC",
+    fileType: "image"
+  },
+  {
+    title: "첼로프로필 야외 확대",
+    description: "첼리스트 이혜린의 야외 프로필(확대) 이미지 자료입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8i6geiTNXkLa8SIJ4HrZR6ElVM9QUOyivtjcx",
+    fileType: "image"
+  },
+  {
+    title: "첼로연주 측면",
+    description: "첼리스트 이혜린의 첼로 연주 측면 이미지 자료입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8XK9MrHbhuRCq2cGPEA4vLm5Dpat7HwFkNeSB",
+    fileType: "image"
+  },
+  {
+    title: "[그래,난 노란 튤립 첼리스트야!] 입체 책표지",
+    description: "첼리스트 이혜린의 저서 '그래, 난 노란 튤립 첼리스트야!' 입체 책표지 이미지입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8P02Su5c4oaMnN8VzUtkXEZqb2YCxGBDpLIyh",
+    fileType: "image"
+  },
+  {
+    title: "[그래, 난 노란 튤립 첼리스트야!]책정면",
+    description: "첼리스트 이혜린의 저서 '그래, 난 노란 튤립 첼리스트야!' 책 정면 이미지입니다.",
+    fileUrl: "https://rnk2hw30mh.ufs.sh/f/ZyT5ytIcP0f8C5AcmDzqsr6UIkBZ7EyTVdjRYMcNbSOmh5zp",
+    fileType: "image"
   }
 ];
 
