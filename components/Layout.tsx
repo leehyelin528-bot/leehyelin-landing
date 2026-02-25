@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Instagram, Mail, MessageCircle, Music, BookOpen } from 'lucide-react';
-import { NAV_ITEMS, SITE_NAME } from '../constants';
+import { Menu, X, Instagram, Mail, MessageCircle, Music, BookOpen, Download } from 'lucide-react';
+import { NAV_ITEMS, SITE_NAME, INSTRUCTOR_MATERIALS_LINK } from '../constants';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -27,7 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex items-center space-x-8">
               {NAV_ITEMS.map((item) => (
                 <NavLink
                   key={item.path}
@@ -43,6 +43,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   {item.label}
                 </NavLink>
               ))}
+              
+              <a
+                href={INSTRUCTOR_MATERIALS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-1 px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-full hover:bg-primary-700 transition-colors shadow-sm"
+              >
+                <Download size={16} />
+                <span>강사 자료</span>
+              </a>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -78,6 +88,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   {item.label}
                 </NavLink>
               ))}
+              
+              <a
+                href={INSTRUCTOR_MATERIALS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="flex items-center justify-center space-x-2 px-3 py-3 mt-4 bg-primary-600 text-white rounded-md text-base font-medium hover:bg-primary-700 transition-colors"
+              >
+                <Download size={18} />
+                <span>강사 자료 다운로드</span>
+              </a>
             </div>
           </div>
         )}

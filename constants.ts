@@ -90,6 +90,8 @@ export const BOOK_INFO = {
   link: "https://product.kyobobook.co.kr/detail/S000218912497"
 };
 
+export const INSTRUCTOR_MATERIALS_LINK = "https://drive.google.com/file/d/1b8YUmjKlhLSgl5z9PUGjFN98i9euVe2e/view?usp=sharing";
+
 export const YOUTUBE_VIDEOS: YoutubeVideo[] = [
   { 
     id: "vPCwuQhonnY", 
